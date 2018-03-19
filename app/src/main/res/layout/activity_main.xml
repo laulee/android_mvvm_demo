@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="viewModel"
+            type="com.laulee.androidmvvmdemo.vm.MainVM"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.basic}"
+            android:onClick="@{viewModel.openBasic}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绑定imageview"
+            android:onClick="@{viewModel.openImage}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绑定ListView"
+            android:onClick="@{viewModel.openListView}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绑定RecycleView"
+            android:onClick="@{viewModel.openRecycleView}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="简单的RecyclerAdapter框架"
+            android:onClick="@{viewModel.openSimpleAdapter}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="带头部的RecyclerAdapter"
+            android:onClick="@{viewModel.openHeadFootRecycler}"/>
+    </LinearLayout>
+</layout>
